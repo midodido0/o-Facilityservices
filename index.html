@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olive Facility Services</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html" class="logo-link">Olive Facility Services</a></h1>
+            <button id="menu-toggle" aria-label="Menü öffnen">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#ueber-uns">Über uns</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section id="Leistungen">
+            <h2>Unsere Leistungen</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Bauendreinigung</h3>
+                    <p>Grünliche Endreinigung nach Bauabschluss.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hausmeisterservices</h3>
+                    <p>Zuverlässige Betreuung Ihrer Immobilie.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fassadenreinigung</h3>
+                    <p>Schonende Reinigung für jede Fassade.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hochdruckreinigung</h3>
+                    <p>Effektive Entfernung von Schmutz und Ablagerungen.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Arc.Ahmad Badawi</p>
+            <p>E-Mail: inf@o-facilityservices.de</p>
+            <p>Telefon: 015202747052</p>      
+            <form id="contact-form" action="https://formspree.io/f/xyeyzrzl" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Nachricht senden</button>
+                
+            </form>   
+            <p id="form-status"></p>     
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Olive Facility Services</p>
+            <p><a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
